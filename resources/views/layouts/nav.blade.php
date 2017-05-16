@@ -3,13 +3,13 @@
     <div class="container">
         <!-- Start Toggle Navigation For Mobile display -->
         <div class="navbar-header">             
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">                            
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">                 
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>                    
-            <a class="navbar-brand" href="{{ url('/') }}">Friends Of Allamano Foundation</a>           
+            <a class="navbar-brand" href="{{ url('/') }}"><img src="{{ asset('assets/images/logo.png') }}" alt="company logo" /></a>           
         </div>
         <!-- End Toggle Navigation For Mobile display -->
 
@@ -23,7 +23,7 @@
                     <a class="active" href="{{ url('/') }}">Home</a>
                 </li>
                 <li>
-                    <a href="{{ url('about') }}">About Us</a>
+                    <a href="#about">About Us</a>
                 </li>
                 <li>
                     <a href="{{ url('shop') }}">Shop</a>
@@ -32,7 +32,7 @@
                     <a href="{{ url('blog') }}">Blog</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="{{ url('contact') }}">Contact</a>
+                    <a href="{{ url('contact') }}">Contact</a>
                 </li>
             </ul>                        
         </div>
