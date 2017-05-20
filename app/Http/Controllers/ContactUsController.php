@@ -9,10 +9,10 @@ class ContactUsController extends Controller
     /**
      * Display the Contact Form. 
      *
-     * @return Response
+     * @return View
      */
 
     public function create(){
-    	return view('emails.contact');
+    	return view('pages.contact');
     } 
 }
