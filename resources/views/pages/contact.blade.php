@@ -21,8 +21,8 @@
                         </div>
 
                         <div class="row">
-                            <div class="col-lg-12 col-md-12 fclorm-group">  
-                                <input class="form-control custom-labels" type="text" name="name" placeholder="Your name">
+                            <div class="col-lg-12 col-md-12 form-group">  
+                                <input class="form-control custom-labels" type="text" name="name" placeholder="Your name" required autofocus>
                             </div>                   
                         </div>
 
@@ -30,7 +30,7 @@
 
                         <div class="row">
                             <div class="col-lg-12 col-md-12 form-group">  
-                                <input class="form-control custom-labels" type="email" name="email" placeholder="Your email">
+                                <input class="form-control custom-labels" type="email" name="email" placeholder="Your email" required autofocus>
                             </div>                    
                         </div> 
 
@@ -38,7 +38,7 @@
 
                         <div class="row">
                             <div class="col-lg-12 col-md-12 form-group">      
-                                <textarea class="form-control custom-labels" type="text" name="message" placeholder="Your message"></textarea>
+                                <textarea class="form-control custom-labels" type="text" name="message" placeholder="Your message" required autofocus></textarea>
                             </div>                   
                         </div>
 
@@ -46,7 +46,7 @@
 
                         <div class="row">
                             <div class="col-lg-12 col-md-12">
-                                <button type="submit" class="btn btn-danger btn-md">Send</button>
+                                <button type="submit" class="btn btn-danger">Send</button>
                             </div>
                         </div>                
                     </form>                    

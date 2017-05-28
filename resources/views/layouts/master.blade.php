@@ -7,16 +7,26 @@
         <meta name="description" content="">
         <meta name="author" content="">        
 
+        <!-- CSRF Token -->
+        <meta name="csrf-token" content="{{ csrf_token() }}">        
+
         <title>Friends Of Allamano Foundation | @yield('title')</title>
 
         <!-- Bootstrap Core CSS -->
-        <link rel="stylesheet" type="text/css" href="{{ asset('assets/bootstrap/css/bootstrap.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('assets/bootstrap/css/bootstrap.min.css') }}">      
 
         <!-- Font Awesome CSS -->
         <link rel="stylesheet" type="text/css" href="{{ asset('assets/font-awesome/css/font-awesome.min.css') }}">
 
         <!-- Custom CSS -->        
-        <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/custom.css') }}">                 
+        <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/custom.css') }}">  
+
+        <!-- Scripts -->
+        <script>
+            window.Laravel = {!! json_encode([
+                'csrfToken' => csrf_token(),
+            ]) !!};
+        </script>                       
 
     </head>
     <body data-spy="scroll">
