@@ -43,7 +43,7 @@
 			</li>
 			<li><span>image-5</span>
 				<div class="container">																	
-					<h5><a class="btn btn-primary btn-noborder-radius hvr-bounce-to-bottom">Buy Now!</a></h5>										
+					<h5><a class="btn btn-primary btn-noborder-radius hvr-bounce-to-bottom" href="{{ url('shop') }}"> Buy Now!</a></h5>										
 				</div>
 			</li>												
 		</ul>
