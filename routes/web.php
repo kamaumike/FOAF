@@ -19,5 +19,6 @@ Auth::routes();
 
 Route::get('/', 'HomeController@index');
 Route::get('/shop', 'ProductController@index');
+Route::get('/shop/{item}', 'ProductController@show');
 Route::get('/contact', 'ContactUsController@create');
 Route::post('/contact', 'ContactUsController@store');
