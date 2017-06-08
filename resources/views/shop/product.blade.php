@@ -16,7 +16,13 @@
                 </div>
 
                 <div class="col-md-8">
+                    <h3><u>Details</u></h3>
+                    {{ $product->description }}
+
+                    <br><br>
+
                     <h3>${{ $product->price }}</h3>
+              
                     <form action="{{ url('/cart') }}" method="POST" class="side-by-side">
                         {!! csrf_field() !!}
                         <input type="hidden" name="id" value="{{ $product->id }}">
@@ -33,14 +39,10 @@
                         <input type="submit" class="btn btn-primary btn-lg" value="Add to Wishlist">
                     </form>
 
-
-                    <br><br>
-
-                    {{ $product->description }}
                 </div> <!-- end col-md-8 -->
             </div> <!-- end row -->
 
-            <div class="spacer"></div>
+            <div class="spacer"><hr></div>            
 
             <div class="row">
                 <h3>You may also like...</h3>
