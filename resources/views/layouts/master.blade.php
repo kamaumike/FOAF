@@ -48,5 +48,8 @@
 
         <script src="{{ asset('assets/js/jqueryscroll.js') }}"></script>
 
+        <!-- Additional javascript -->
+        @yield('extra-js')
+
     </body>
 </html>
