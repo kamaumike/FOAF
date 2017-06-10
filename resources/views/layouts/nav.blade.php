@@ -22,8 +22,7 @@
                     <li><a class="active" href="{{ url('/') }}">Home</a></li> 
                     <li><a href="{{ url('shop') }}">Shop</a></li>
                     <li><a href="{{ url('blog') }}">Blog</a></li>
-                    <li><a href="{{ url('contact') }}">Contact</a></li>
-                    <li><a href="{{ url('shopping-cart') }}"><i class="fa fa-shopping-cart" aria-hidden="true"></i> View Cart</a></li>                
+                    <li><a href="{{ url('contact') }}">Contact</a></li>             
                     <li class="dropdown">
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user" aria-hidden="true"></i> My Account<span class="caret"></span></a>
                       <ul class="dropdown-menu">                       
@@ -37,7 +36,10 @@
                     <li><a href="{{ url('shop') }}">Shop</a></li>
                     <li><a href="{{ url('blog') }}">Blog</a></li>
                     <li><a href="{{ url('contact') }}">Contact</a></li>
-                    <li><a href="{{ url('shopping-cart') }}"><i class="fa fa-shopping-cart" aria-hidden="true"></i> View Cart</a></li>       
+
+                    <li><a href="{{ url('/wishlist') }}"><i class="fa fa-heart-o" aria-hidden="true"></i> Wishlist ({{ Cart::instance('wishlist')->count(false) }})</a></li>
+
+                    <li><a href="{{ url('/cart') }}"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart ({{ Cart::instance('default')->count(false) }})</a></li>                           
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                             <i class="fa fa-user" aria-hidden="true"></i> {{ Auth::user()->name }} <span class="caret"></span>
