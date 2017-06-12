@@ -33,6 +33,7 @@ Route::get('/wishlist', 'WishlistController@index');
 Route::post('/wishlist', 'WishlistController@store');
 Route::delete('/wishlist/{id}', 'WishlistController@destroy');
 Route::delete('/emptyWishlist', 'WishlistController@emptyWishlist');
+Route::post('/moveToCart/{id}', 'WishlistController@moveToCart');
 
 Route::get('/contact', 'ContactUsController@create');
 Route::post('/contact', 'ContactUsController@store');
