@@ -50,4 +50,16 @@ class WishlistController extends Controller
         Cart::instance('wishlist')->remove($id);
         return redirect('/wishlist')->withSuccessMessage('Item has been removed!');        
     }
+
+    /**
+     * Empty the Wishlist.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function emptyWishlist()
+    {
+        Cart::instance('wishlist')->destroy();
+        return redirect('/wishlist')->withSuccessMessage('Your wishlist has been cleared!');
+    }
+
 }
