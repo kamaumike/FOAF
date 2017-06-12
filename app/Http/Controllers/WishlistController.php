@@ -62,4 +62,30 @@ class WishlistController extends Controller
         return redirect('/wishlist')->withSuccessMessage('Your wishlist has been cleared!');
     }
 
+    /**
+     * Move item from Wishlist to Shopping cart.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function moveToCart($id)
+    {
+        $item = Cart::instance('wishlist')->get($id);
+
+        Cart::instance('wishlist')->remove($id);
+
+        $duplicates = Cart::instance('default')->search(function ($cartItem, $rowId) use ($id) {
+            return $cartItem->id === $id;
+        });
+
+        if (!$duplicates->isEmpty()) {
+            return redirect('/cart')->withSuccessMessage('Item is already in your shopping cart!');
+        }
+
+        Cart::instance('default')->add($item->id, $item->name, 1, $item->price)
+                                 ->associate('App\Product');
+
+        return redirect('/wishlist')->withSuccessMessage('Item has been moved to your shopping cart!');
+
+    }    
 }
