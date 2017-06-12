@@ -59,7 +59,7 @@
                                     <input type="submit" class="btn btn-danger btn-sm" value="Remove">
                                 </form>
 
-                                <form action="{{ url('switchToWishlist', [$item->rowId]) }}" method="POST" class="side-by-side">
+                                <form action="{{ url('moveToWishlist', [$item->rowId]) }}" method="POST" class="side-by-side">
                                     {{ csrf_field() }}
                                     <input type="submit" class="btn btn-success btn-sm" value="To Wishlist">
                                 </form>
