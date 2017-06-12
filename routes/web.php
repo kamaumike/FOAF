@@ -29,5 +29,9 @@ Route::delete('/cart/{id}', 'CartController@destroy');
 Route::delete('/emptyCart', 'CartController@emptyCart');
 Route::post('/moveToWishlist/{id}', 'CartController@moveToWishlist');
 
+Route::get('/wishlist', 'WishlistController@index');
+Route::post('/wishlist', 'WishlistController@store');
+Route::delete('/wishlist/{id}', 'WishlistController@destroy');
+
 Route::get('/contact', 'ContactUsController@create');
 Route::post('/contact', 'ContactUsController@store');
