@@ -63,4 +63,15 @@ class CartController extends Controller
         Cart::remove($id);
         return redirect('/cart')->withSuccessMessage('Item has been removed!');
     }
+
+    /**
+     * Empty the shopping cart.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function emptyCart()
+    {
+        Cart::destroy();
+        return redirect('/cart')->withSuccessMessage('Your cart has been cleared!');
+    }    
 }
