@@ -24,5 +24,6 @@ Route::get('/cart', 'CartController@index');
 Route::post('/cart', 'CartController@store');
 Route::patch('/cart/{id}', 'CartController@update');
 Route::delete('/cart/{id}', 'CartController@destroy');
+Route::delete('/emptyCart', 'CartController@emptyCart');
 Route::get('/contact', 'ContactUsController@create');
 Route::post('/contact', 'ContactUsController@store');
