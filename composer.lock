@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "5998fee7b4c0a2239689954721859ae0",
+    "content-hash": "082d2d9795f69b82ab8a8415c93da0d0",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -705,60 +705,6 @@
             "time": "2016-12-30T18:13:17+00:00"
         },
         {
-            "name": "laravelcollective/html",
-            "version": "v5.4.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/LaravelCollective/html.git",
-                "reference": "7570f25d58a00fd6909c0563808590f9cdb14d47"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/LaravelCollective/html/zipball/7570f25d58a00fd6909c0563808590f9cdb14d47",
-                "reference": "7570f25d58a00fd6909c0563808590f9cdb14d47",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/http": "5.4.*",
-                "illuminate/routing": "5.4.*",
-                "illuminate/session": "5.4.*",
-                "illuminate/support": "5.4.*",
-                "illuminate/view": "5.4.*",
-                "php": ">=5.6.4"
-            },
-            "require-dev": {
-                "illuminate/database": "5.4.*",
-                "mockery/mockery": "~0.9.4",
-                "phpunit/phpunit": "~5.4"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Collective\\Html\\": "src/"
-                },
-                "files": [
-                    "src/helpers.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Taylor Otwell",
-                    "email": "taylorotwell@gmail.com"
-                },
-                {
-                    "name": "Adam Engebretson",
-                    "email": "adam@laravelcollective.com"
-                }
-            ],
-            "description": "HTML and Form Builders for the Laravel Framework",
-            "homepage": "http://laravelcollective.com",
-            "time": "2017-01-26T19:27:05+00:00"
-        },
-        {
             "name": "league/flysystem",
             "version": "1.0.35",
             "source": {
@@ -1080,49 +1026,6 @@
             "time": "2017-01-16T07:55:07+00:00"
         },
         {
-            "name": "netshell/paypal",
-            "version": "1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/net-shell/laravel-paypal.git",
-                "reference": "801b21bd2c39b9d93150c24744667642d4314601"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/net-shell/laravel-paypal/zipball/801b21bd2c39b9d93150c24744667642d4314601",
-                "reference": "801b21bd2c39b9d93150c24744667642d4314601",
-                "shasum": ""
-            },
-            "require": {
-                "ext-curl": "*",
-                "ext-json": "*",
-                "illuminate/support": "~5.0",
-                "paypal/rest-api-sdk-php": "0.15.1",
-                "php": ">=5.3.0"
-            },
-            "require-dev": {
-                "phpspec/phpspec": "~2.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Anouar\\Paypalpayment": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-2-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Anouar Abdessalam",
-                    "email": "dtekind@gmail.com"
-                }
-            ],
-            "description": "laravel-paypalpayment is simple package help you process direct credit card payments, stored credit card payments and PayPal account payments with your L4 projects using paypal REST API SDK.",
-            "time": "2015-03-03T13:31:39+00:00"
-        },
-        {
             "name": "nikic/php-parser",
             "version": "v3.0.4",
             "source": {
@@ -1223,22 +1126,23 @@
         },
         {
             "name": "paypal/rest-api-sdk-php",
-            "version": "v0.15.1",
+            "version": "1.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/paypal/PayPal-PHP-SDK.git",
-                "reference": "6cf15ab4bfb1add0115fc5595c73baf276e8d4ea"
+                "reference": "7e664f12be32b975575371e8ad3bc17b6b318851"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/paypal/PayPal-PHP-SDK/zipball/6cf15ab4bfb1add0115fc5595c73baf276e8d4ea",
-                "reference": "6cf15ab4bfb1add0115fc5595c73baf276e8d4ea",
+                "url": "https://api.github.com/repos/paypal/PayPal-PHP-SDK/zipball/7e664f12be32b975575371e8ad3bc17b6b318851",
+                "reference": "7e664f12be32b975575371e8ad3bc17b6b318851",
                 "shasum": ""
             },
             "require": {
                 "ext-curl": "*",
                 "ext-json": "*",
-                "php": ">=5.3.0"
+                "php": ">=5.3.0",
+                "psr/log": "^1.0.0"
             },
             "require-dev": {
                 "phpunit/phpunit": "3.7.*"
@@ -1251,7 +1155,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "Apache2"
+                "Apache-2.0"
             ],
             "authors": [
                 {
@@ -1260,14 +1164,64 @@
                 }
             ],
             "description": "PayPal's PHP SDK for REST APIs",
-            "homepage": "https://github.com/paypal/rest-api-sdk-php",
+            "homepage": "http://paypal.github.io/PayPal-PHP-SDK/",
             "keywords": [
                 "payments",
                 "paypal",
                 "rest",
                 "sdk"
             ],
-            "time": "2014-12-01T23:51:08+00:00"
+            "time": "2016-12-14T21:59:21+00:00"
+        },
+        {
+            "name": "predis/predis",
+            "version": "v1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nrk/predis.git",
+                "reference": "f0210e38881631afeafb56ab43405a92cafd9fd1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nrk/predis/zipball/f0210e38881631afeafb56ab43405a92cafd9fd1",
+                "reference": "f0210e38881631afeafb56ab43405a92cafd9fd1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.8"
+            },
+            "suggest": {
+                "ext-curl": "Allows access to Webdis when paired with phpiredis",
+                "ext-phpiredis": "Allows faster serialization and deserialization of the Redis protocol"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Predis\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniele Alessandri",
+                    "email": "suppakilla@gmail.com",
+                    "homepage": "http://clorophilla.net"
+                }
+            ],
+            "description": "Flexible and feature-complete Redis client for PHP and HHVM",
+            "homepage": "http://github.com/nrk/predis",
+            "keywords": [
+                "nosql",
+                "predis",
+                "redis"
+            ],
+            "time": "2016-06-16T16:22:20+00:00"
         },
         {
             "name": "psr/http-message",
@@ -1520,85 +1474,6 @@
                 "uuid"
             ],
             "time": "2016-11-22T19:21:44+00:00"
-        },
-        {
-            "name": "socialiteproviders/manager",
-            "version": "v3.0.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/SocialiteProviders/Manager.git",
-                "reference": "f57877e96c46f0f9157fcd8fa68a547f6d344ed5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/SocialiteProviders/Manager/zipball/f57877e96c46f0f9157fcd8fa68a547f6d344ed5",
-                "reference": "f57877e96c46f0f9157fcd8fa68a547f6d344ed5",
-                "shasum": ""
-            },
-            "require": {
-                "laravel/socialite": "~3.0",
-                "php": "^5.6 || ^7.0"
-            },
-            "require-dev": {
-                "mockery/mockery": "^0.9.4",
-                "phpunit/phpunit": "^5.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "SocialiteProviders\\Manager\\": "src/",
-                    "SocialiteProviders\\Manager\\Test\\": "tests/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Andy Wendt",
-                    "email": "andy@awendt.com"
-                }
-            ],
-            "description": "Easily add new or override built-in providers in Laravel Socialite.",
-            "time": "2017-02-07T07:26:42+00:00"
-        },
-        {
-            "name": "socialiteproviders/paypal",
-            "version": "v3.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/SocialiteProviders/PayPal.git",
-                "reference": "d1a05f9e9bf794dfa6d946266b9fecb4285d4fa9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/SocialiteProviders/PayPal/zipball/d1a05f9e9bf794dfa6d946266b9fecb4285d4fa9",
-                "reference": "d1a05f9e9bf794dfa6d946266b9fecb4285d4fa9",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^5.6 || ^7.0",
-                "socialiteproviders/manager": "~3.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "SocialiteProviders\\PayPal\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Brian Faust",
-                    "email": "hello@brianfaust.de"
-                }
-            ],
-            "description": "PayPal OAuth2 Provider for Laravel Socialite",
-            "time": "2017-01-25T09:48:29+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -2632,12 +2507,12 @@
             "version": "0.9.8",
             "source": {
                 "type": "git",
-                "url": "https://github.com/padraic/mockery.git",
+                "url": "https://github.com/mockery/mockery.git",
                 "reference": "1e5e2ffdc4d71d7358ed58a6fdd30a4a0c506855"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/padraic/mockery/zipball/1e5e2ffdc4d71d7358ed58a6fdd30a4a0c506855",
+                "url": "https://api.github.com/repos/mockery/mockery/zipball/1e5e2ffdc4d71d7358ed58a6fdd30a4a0c506855",
                 "reference": "1e5e2ffdc4d71d7358ed58a6fdd30a4a0c506855",
                 "shasum": ""
             },
