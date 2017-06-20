@@ -97,7 +97,7 @@
                 </table>
 
                 <a href="{{ url('/shop') }}" class="btn btn-primary btn-lg">Continue Shopping</a> &nbsp;
-                <a href="#" class="btn btn-success btn-lg">Proceed to Checkout</a>
+                <a href="{{ url('/checkout') }}" class="btn btn-success btn-lg">Proceed to Checkout</a>
 
                 <div style="float:right">
                     <form action="{{ url('/emptyCart') }}" method="POST">
@@ -120,8 +120,9 @@
     </section>
 @endsection
 
-@section('extra-js')
+@section('custom-js')
     <script>
+        // Update quantity of items in shopping cart
         (function(){
 
             $.ajaxSetup({
