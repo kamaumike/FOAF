@@ -19,7 +19,10 @@
         <link rel="stylesheet" type="text/css" href="{{ asset('assets/font-awesome/css/font-awesome.min.css') }}">
 
         <!-- Custom CSS -->        
-        <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/custom.css') }}">  
+        <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/custom.css') }}"> 
+
+        <!-- Custom CSS for specific pages -->  
+        @yield('custom-css') 
 
         <!-- Scripts -->
         <script>
@@ -41,15 +44,15 @@
         
 
         <!-- jQuery -->
-        <script src="{{ asset('assets/js/jquery.js') }}"></script>
+        <script src="{{ asset('assets/js/jquery-3.2.1.min.js') }}"></script>
         
         <!-- Bootstrap Core JavaScript -->
         <script src="{{ asset('assets/bootstrap/js/bootstrap.min.js') }}"></script>
 
         <script src="{{ asset('assets/js/jqueryscroll.js') }}"></script>
-
-        <!-- Additional javascript -->
-        @yield('extra-js')
+        
+        <!-- Custom Javascript for specific pages -->
+        @yield('custom-js') 
 
     </body>
 </html>
