@@ -14,12 +14,14 @@
                 <div class="alert alert-success">
                     {{ session()->get('success_message') }}
                 </div>
+                {{ session()->forget('success_message') }}
             @endif
 
             @if (session()->has('error_message'))
                 <div class="alert alert-danger">
                     {{ session()->get('error_message') }}
                 </div>
+                {{ session()->forget('error_message') }}
             @endif
 
             @if (sizeof(Cart::content()) > 0)
