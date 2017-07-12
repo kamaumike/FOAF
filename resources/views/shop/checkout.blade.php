@@ -305,7 +305,7 @@
                                                             <option {{ $item->qty == 5 ? 'selected' : '' }}>5</option>
                                                         </select>
                                                     </td>
-                                                    <td>${{ $item->subtotal }}</td>                                                                    
+                                                    <td name="subtotal">${{ $item->subtotal }}</td>                                                                    
                                                 </tr>
 
                                                 @endforeach
@@ -350,8 +350,7 @@
                                     <legend>Select a payment method</legend>
                                     <!-- BEGIN STEP CONTENT-->
 
-                                    <a href="{{ url('/payment/paypal') }}" class="btn btn-primary btn-lg side-by-side">Paypal</a>
-                                    <a href="{{ url('/payment/m-pesa') }}" class="btn btn-primary btn-lg side-by-side">M-Pesa</a> 
+                                    <a href="{{ url('paypal') }}" class="side-by-side"><img src="https://www.paypalobjects.com/webstatic/en_US/i/btn/png/silver-pill-paypal-44px.png" alt="PayPal" class="btn-pill-paypal"></a> &nbsp;&nbsp;&nbsp;&nbsp;                                          
 
                                     <!-- END STEP CONTENT-->
                                 </fieldset>
