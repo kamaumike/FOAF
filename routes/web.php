@@ -37,5 +37,8 @@ Route::post('/moveToCart/{id}', 'WishlistController@moveToCart');
 
 Route::get('/checkout', 'CheckoutController@index');
 
+Route::get('/paypal', 'PaymentController@payWithPaypal');
+Route::get('/paypal_status', 'PaymentController@paypalPaymentStatus')->name('paymentstatus');
+
 Route::get('/contact', 'ContactUsController@create');
 Route::post('/contact', 'ContactUsController@store');
