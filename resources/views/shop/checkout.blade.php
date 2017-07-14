@@ -350,7 +350,9 @@
                                     <legend>Select a payment method</legend>
                                     <!-- BEGIN STEP CONTENT-->
 
-                                    <a href="{{ url('paypal') }}" class="side-by-side"><img src="https://www.paypalobjects.com/webstatic/en_US/i/btn/png/silver-pill-paypal-44px.png" alt="PayPal" class="btn-pill-paypal"></a> &nbsp;&nbsp;&nbsp;&nbsp;                                          
+                                    <a href="{{ url('paypal') }}" class="side-by-side"><img src="https://www.paypalobjects.com/webstatic/en_US/i/btn/png/silver-pill-paypal-44px.png" alt="PayPal" class="btn-pill-paypal"></a> &nbsp;&nbsp;&nbsp;&nbsp;
+
+                                    <a href="{{ url('m-pesa') }}" class="side-by-side"><img src="{{ asset('assets/images/m-pesa.jpg') }}" alt="M-Pesa" class="btn-pill"></a>      
 
                                     <!-- END STEP CONTENT-->
                                 </fieldset>
