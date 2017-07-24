@@ -11,6 +11,34 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Auth::routes();
+
+Route::get('/', 'HomeController@index');
+
+Route::get('/shop', 'ProductController@index');
+Route::get('/shop/{item}', 'ProductController@show');
+
+Route::get('/cart', 'CartController@index');
+Route::post('/cart', 'CartController@store');
+Route::patch('/cart/{id}', 'CartController@update');
+Route::delete('/cart/{id}', 'CartController@destroy');
+Route::delete('/emptyCart', 'CartController@emptyCart');
+Route::post('/moveToWishlist/{id}', 'CartController@moveToWishlist');
+
+Route::get('/wishlist', 'WishlistController@index');
+Route::post('/wishlist', 'WishlistController@store');
+Route::delete('/wishlist/{id}', 'WishlistController@destroy');
+Route::delete('/emptyWishlist', 'WishlistController@emptyWishlist');
+Route::post('/moveToCart/{id}', 'WishlistController@moveToCart');
+
+Route::get('/checkout', 'CheckoutController@index');
+
+Route::get('/paypal', 'PaymentController@payWithPaypal');
+Route::get('/paypal_status', 'PaymentController@paypalPaymentStatus')->name('paymentstatus');
+
+Route::get('/contact', 'ContactUsController@create');
+Route::post('/contact', 'ContactUsController@store');
