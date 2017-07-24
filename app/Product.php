@@ -11,5 +11,13 @@ class Product extends Model
      *
      * @var array
      */    
-    protected $fillable = ['name','slug','description','price','image'];
+    protected $fillable = ['name','slug','description','price','image',];
+
+    // Get the Order id a product belongs to
+	public function orderProducts()
+	{
+		
+		return $this->hasMany(OrderProduct::class);
+
+	}    
 }
